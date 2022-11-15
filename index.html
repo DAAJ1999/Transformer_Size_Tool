@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Transformer Sizing Tool</title>
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="css/styles.css" rel="stylesheet" />
+    </head>
+    <body>
+        <!-- Responsive navbar-->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container">
+                <a class="navbar-brand" href="#">Transformer Sizing Tool</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item"><a class="nav-link active" aria-current="page" href="#">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Link</a></li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Dropdown</a>
+                            <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li><hr class="dropdown-divider" /></li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- Page content-->
+        <div class="container">
+            <div class="text-center mt-5">
+                <h1>Transformer Size Calculator</h1>
+                <p class="lead"></p>
+                <p></p>
+            </div>
+        </div>
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+         <script src="js/scripts.js"></script>
+<form onsubmit="return fn1()">
+ <div class="Method">
+  <label style="color: black;font-family: Times New Roman;font-weight: 700;" class="Method" for="Methodchoice">Method</label>
+  <select class="method" id="Methodchoice">
+    <option selected>Choose</option>
+    <option value="Diversity">Diversity Method</option>
+    <option value="Coincidence Factor">Coincidence Factor Method</option>
+    <option value="SquareFootage Table">SquareFootage Table Method</option>
+	</select>
+  </div>
+
+  <div class="HouseNumbers">
+    <label style="color: black;font-family: Times New Roman;font-weight: 700;" for="Number of Houses">Number Of Houses:</label>
+    <input type="Number" class="HouseNumbers" id="NH"  name="NumberofHouses" placeholder="Enter Number of Houses">
+  </div>
+  
+  <div id="results"></div>
+  <br>
+  <div class="SquareFoot">
+  <label style="color: black;font-family: Times New Roman;font-weight: 700;" class="SquareFoot" for="inlineFormCustomSelectPref">Highest Squarefoot Home:</label>
+  <select class="SquareFoot" id="inlineFormCustomSelectPref">
+    <option selected>Choose...</option>
+    <option value="1200">1200sqft</option>
+    <option value="1500">1500sqft</option>
+    <option value="1800">1800sqft</option>
+	<option value="2400">2400sqft</option>
+	<option value="3000">3000sqft</option>
+
+	
+  </select><br><br>
+  </div>
+    <div class="SquareFoot1">
+  <label style="color: black;font-family: Times New Roman;font-weight: 700;" class="SquareFoot" for="inlineFormCustomSelectPref">Lowest Squarefoot Home:</label>
+  <select class="SquareFoot1" id="inlineFormCustomSelectPref1">
+    <option selected>Choose...</option>
+    <option value="1200">1200sqft</option>
+    <option value="1500">1500sqft</option>
+    <option value="1800">1800sqft</option>
+	<option value="2400">2400sqft</option>
+	<option value="3000">3000sqft</option>
+
+	
+  </select><br><br>
+  </div>
+   <div class="Gas">
+    <label style="color: black;font-family: Times New Roman;font-weight: 700;" for="Number of Houses">Number Of Houses(Gas Heat):</label>
+    <input type="Number" class="Gas" id="InputnumberofhousesGas" name="NumberofHousesGas" placeholder="Enter Number of Houses with Gas Heat">
+  </div>
+   <div class="Electric">
+    <label style="color: black;font-family: Times New Roman;font-weight: 700;" for="Number of Houses">Number Of Houses(Electric Heat):</label>
+    <input type="Number" class="Electric" id="InputnumberofhousesElectric" name="NumberofHousesElectric" placeholder="Enter Number of Houses with Electric Heat">
+  </div>
+  <button class="btn1">Submit</button>
+  <p>Transformer Size:</p>
+  <p id="TS">Results KVA</p>
+</form>
+		 
+    </body>
+</html>

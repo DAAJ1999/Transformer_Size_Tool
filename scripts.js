@@ -12,11 +12,11 @@
 function fn1()
 {
 	var Met = document.getElementById("Methodchoice").value;
-	var SF = document.getElementById("inlineFormCustomSelectPref").value;
+	var SF = document.getElementById("SquareFootSize").value;
 	var NHG = document.getElementById("InputnumberofhousesGas").valueAsNumber;
 	var NHE = document.getElementById("InputnumberofhousesElectric").valueAsNumber;
 	var NH = document.getElementById("NH").valueAsNumber; 
-	var LSF= document.getElementById("inlineFormCustomSelectPref1").value;
+	var LSF= document.getElementById("SquareFootSize1").value;
 	var TS = 0;
     var Trans=[
 		[0,25,25,25,25,25,50,50,50,50,50,100,100,100,100],
@@ -26,7 +26,7 @@ function fn1()
 		[50,50,50,50,50,100,100,100,100,100,100,100,100,100,100],
 		[50,50,50,100,100,100,100,100,100,100,100,100,100,100,100],
 		];
-	const DF =[0,1,0.9,0.75,0.65,0.63,0.62,0.61,0.61,0.61,0.61,0.60,0.59,0.58,0.58,0.57,0.57,0.56,0.54,0.54,0.54];
+	var DF =[0,1,0.9,0.75,0.65,0.63,0.62,0.61,0.61,0.61,0.61,0.60,0.59,0.58,0.58,0.57,0.57,0.56,0.54,0.54,0.54];
 	
 if(Met=="Diversity"){
 	 
@@ -52,36 +52,44 @@ if(Met=="Diversity"){
 		if((ESDF < 14 || ESDF == 14 && ESDF > 0 ) || (EWDF < 16 || EWDF == 16 && EWDF > 0)){
 			TS = 10;
 			document.getElementById("TS").innerHTML= TS;
+			console.log(TS);
 		}
 		if((ESDF < 21 || ESDF == 21 && ESDF > 14) || (EWDF < 24 || EWDF == 24 && EWDF > 16)){
 			TS = 15;
 			document.getElementById("TS").innerHTML= TS;
+			console.log(TS);
 		}
 		if((ESDF < 35 || ESDF == 35 && ESDF > 21) || (EWDF < 40 || EWDF == 40 && EWDF > 24)){
 			TS = 25;
 			document.getElementById("TS").innerHTML= TS;
+			console.log(TS);
 		}
 		
 		if((ESDF < 53 || ESDF == 53 && ESDF > 35) || (EWDF < 60 || EWDF == 60 && EWDF > 40)){
 			TS = 37.5;
 			document.getElementById("TS").innerHTML= TS;
+			console.log(TS);
 		}
 		
 		if((ESDF < 70 || ESDF == 70 && ESDF > 53) || (EWDF < 80 || EWDF == 80 && EWDF > 60)){
 			TS = 50;
 			document.getElementById("TS").innerHTML= TS;
+			console.log(TS);
 		}
 		if((ESDF < 105 || ESDF == 105 && ESDF > 70) || (EWDF < 120 || EWDF == 120 && EWDF > 80)){
 			TS = 75;
 			document.getElementById("TS").innerHTML= TS;
+			console.log(TS);
 		}
 		if((ESDF < 140 || ESDF == 140 && ESDF > 105) || (EWDF < 160 || EWDF == 160 && EWDF > 120)){
 			TS = 100;
 			document.getElementById("TS").innerHTML= TS;
+			console.log(TS);
 		}
 		if((ESDF < 234 || ESDF == 234 && ESDF > 140) || (EWDF < 267 || EWDF == 267 && EWDF > 160)){
 			TS = 167;
 			document.getElementById("TS").innerHTML= TS;
+			console.log(TS);
 		}
 		
 		
@@ -97,6 +105,7 @@ if(Met=="Diversity"){
 		var EW= Ewinter*NHE;
 		var GS= Gsummer*NHG;
 		var GW= Gwinter*NHG;
+		var DFA= DF[NH];
 		
 		var ESDF = ES*DFA;
 		var EWDF = EW*DFA;
@@ -107,36 +116,44 @@ if(Met=="Diversity"){
 	if((ESDF < 14 || ESDF == 14 && ESDF > 0 ) || (EWDF < 16 || EWDF == 16 && EWDF > 0)){
 			TS = 10;
 			document.getElementById("TS").innerHTML= TS;
+			console.log(TS);
 		}
 		if((ESDF < 21 || ESDF == 21 && ESDF > 14) || (EWDF < 24 || EWDF == 24 && EWDF > 16)){
 			TS = 15;
 			document.getElementById("TS").innerHTML= TS;
+			console.log(TS);
 		}
 		if((ESDF < 35 || ESDF == 35 && ESDF > 21) || (EWDF < 40 || EWDF == 40 && EWDF > 24)){
 			TS = 25;
 			document.getElementById("TS").innerHTML= TS;
+			console.log(TS);
 		}
 		
 		if((ESDF < 53 || ESDF == 53 && ESDF > 35) || (EWDF < 60 || EWDF == 60 && EWDF > 40)){
 			TS = 37.5;
 			document.getElementById("TS").innerHTML= TS;
+			console.log(TS);
 		}
 		
 		if((ESDF < 70 || ESDF == 70 && ESDF > 53) || (EWDF < 80 || EWDF == 80 && EWDF > 60)){
 			TS = 50;
 			document.getElementById("TS").innerHTML= TS;
+			console.log(TS);
 		}
 		if((ESDF < 105 || ESDF == 105 && ESDF > 70) || (EWDF < 120 || EWDF == 120 && EWDF > 80)){
 			TS = 75;
 			document.getElementById("TS").innerHTML= TS;
+			console.log(TS);
 		}
 		if((ESDF < 140 || ESDF == 140 && ESDF > 105) || (EWDF < 160 || EWDF == 160 && EWDF > 120)){
 			TS = 100;
 			document.getElementById("TS").innerHTML= TS;
+			console.log(TS);
 		}
 		if((ESDF < 234 || ESDF == 234 && ESDF > 140) || (EWDF < 267 || EWDF == 267 && EWDF > 160)){
 			TS = 167;
 			document.getElementById("TS").innerHTML= TS;
+			console.log(TS);
 		}
 		
 	}
@@ -151,6 +168,7 @@ if(Met=="Diversity"){
 		var EW= Ewinter*NHE;
 		var GS= Gsummer*NHG;
 		var GW= Gwinter*NHG;
+		var DFA= DF[NH];
 		
 		var ESDF = ES*DFA;
 		var EWDF = EW*DFA;
@@ -161,24 +179,29 @@ if(Met=="Diversity"){
         if((ESDF < 14 || ESDF == 14 && ESDF > 0 ) || (EWDF < 16 || EWDF == 16 && EWDF > 0)){
 			TS = 10;
 			document.getElementById("TS").innerHTML= TS;
+			console.log(TS);
 		}
 		if((ESDF < 21 || ESDF == 21 && ESDF > 14) || (EWDF < 24 || EWDF == 24 && EWDF > 16)){
 			TS = 15;
 			document.getElementById("TS").innerHTML= TS;
+			console.log(TS);
 		}
 		if((ESDF < 35 || ESDF == 35 && ESDF > 21) || (EWDF < 40 || EWDF == 40 && EWDF > 24)){
 			TS = 25;
 			document.getElementById("TS").innerHTML= TS;
+			console.log(TS);
 		}
 		
 		if((ESDF < 53 || ESDF == 53 && ESDF > 35) || (EWDF < 60 || EWDF == 60 && EWDF > 40)){
 			TS = 37.5;
 			document.getElementById("TS").innerHTML= TS;
+			console.log(TS);
 		}
 		
 		if((ESDF < 70 || ESDF == 70 && ESDF > 53) || (EWDF < 80 || EWDF == 80 && EWDF > 60)){
 			TS = 50;
 			document.getElementById("TS").innerHTML= TS;
+			console.log(TS);
 		}
 		if((ESDF < 105 || ESDF == 105 && ESDF > 70) || (EWDF < 120 || EWDF == 120 && EWDF > 80)){
 			TS = 75;
@@ -187,10 +210,12 @@ if(Met=="Diversity"){
 		if((ESDF < 140 || ESDF == 140 && ESDF > 105) || (EWDF < 160 || EWDF == 160 && EWDF > 120)){
 			TS = 100;
 			document.getElementById("TS").innerHTML= TS;
+			console.log(TS);
 		}
 		if((ESDF < 234 || ESDF == 234 && ESDF > 140) || (EWDF < 267 || EWDF == 267 && EWDF > 160)){
 			TS = 167;
 			document.getElementById("TS").innerHTML= TS;
+			console.log(TS);
 		}
 		
 		
@@ -205,6 +230,7 @@ if(Met=="Diversity"){
 		var EW= Ewinter*NHE;
 		var GS= Gsummer*NHG;
 		var GW= Gwinter*NHG;
+		var DFA= DF[NH];
 		
 		var ESDF = ES*DFA;
 		var EWDF = EW*DFA;
@@ -215,36 +241,44 @@ if(Met=="Diversity"){
 	      if((ESDF < 14 || ESDF == 14 && ESDF > 0 ) || (EWDF < 16 || EWDF == 16 && EWDF > 0)){
 			TS = 10;
 			document.getElementById("TS").innerHTML= TS;
+			console.log(TS);
 		}
 		if((ESDF < 21 || ESDF == 21 && ESDF > 14) || (EWDF < 24 || EWDF == 24 && EWDF > 16)){
 			TS = 15;
 			document.getElementById("TS").innerHTML= TS;
+			console.log(TS);
 		}
 		if((ESDF < 35 || ESDF == 35 && ESDF > 21) || (EWDF < 40 || EWDF == 40 && EWDF > 24)){
 			TS = 25;
 			document.getElementById("TS").innerHTML= TS;
+			console.log(TS);
 		}
 		
 		if((ESDF < 53 || ESDF == 53 && ESDF > 35) || (EWDF < 60 || EWDF == 60 && EWDF > 40)){
 			TS = 37.5;
 			document.getElementById("TS").innerHTML= TS;
+			console.log(TS);
 		}
 		
 		if((ESDF < 70 || ESDF == 70 && ESDF > 53) || (EWDF < 80 || EWDF == 80 && EWDF > 60)){
 			TS = 50;
 			document.getElementById("TS").innerHTML= TS;
+			console.log(TS);
 		}
 		if((ESDF < 105 || ESDF == 105 && ESDF > 70) || (EWDF < 120 || EWDF == 120 && EWDF > 80)){
 			TS = 75;
 			document.getElementById("TS").innerHTML= TS;
+			console.log(TS);
 		}
 		if((ESDF < 140 || ESDF == 140 && ESDF > 105) || (EWDF < 160 || EWDF == 160 && EWDF > 120)){
 			TS = 100;
 			document.getElementById("TS").innerHTML= TS;
+			console.log(TS);
 		}
 		if((ESDF < 234 || ESDF == 234 && ESDF > 140) || (EWDF < 267 || EWDF == 267 && EWDF > 160)){
 			TS = 167;
 			document.getElementById("TS").innerHTML= TS;
+			console.log(TS);
 		}
 		
 		
@@ -260,6 +294,7 @@ if(Met=="Diversity"){
 		var EW= Ewinter*NHE;
 		var GS= Gsummer*NHG;
 		var GW= Gwinter*NHG;
+		var DFA= DF[NH];
 		
 		var ESDF = ES*DFA;
 		var EWDF = EW*DFA;
@@ -270,19 +305,23 @@ if(Met=="Diversity"){
 	    if((ESDF < 14 || ESDF == 14 && ESDF > 0 ) || (EWDF < 16 || EWDF == 16 && EWDF > 0)){
 			TS = 10;
 			document.getElementById("TS").innerHTML= TS;
+			console.log(TS);
 		}
 		if((ESDF < 21 || ESDF == 21 && ESDF > 14) || (EWDF < 24 || EWDF == 24 && EWDF > 16)){
 			TS = 15;
 			document.getElementById("TS").innerHTML= TS;
+			console.log(TS);
 		}
 		if((ESDF < 35 || ESDF == 35 && ESDF > 21) || (EWDF < 40 || EWDF == 40 && EWDF > 24)){
 			TS = 25;
 			document.getElementById("TS").innerHTML= TS;
+			console.log(TS);
 		}
 		
 		if((ESDF < 53 || ESDF == 53 && ESDF > 35) || (EWDF < 60 || EWDF == 60 && EWDF > 40)){
 			TS = 37.5;
 			document.getElementById("TS").innerHTML= TS;
+			console.log(TS);
 		}
 		
 		if((ESDF < 70 || ESDF == 70 && ESDF > 53) || (EWDF < 80 || EWDF == 80 && EWDF > 60)){
@@ -292,14 +331,17 @@ if(Met=="Diversity"){
 		if((ESDF < 105 || ESDF == 105 && ESDF > 70) || (EWDF < 120 || EWDF == 120 && EWDF > 80)){
 			TS = 75;
 			document.getElementById("TS").innerHTML= TS;
+			console.log(TS);
 		}
 		if((ESDF < 140 || ESDF == 140 && ESDF > 105) || (EWDF < 160 || EWDF == 160 && EWDF > 120)){
 			TS = 100;
 			document.getElementById("TS").innerHTML= TS;
+			console.log(TS);
 		}
 		if((ESDF < 234 || ESDF == 234 && ESDF > 140) || (EWDF < 267 || EWDF == 267 && EWDF > 160)){
 			TS = 167;
 			document.getElementById("TS").innerHTML= TS;
+			console.log(TS);
 		}
 		
 		
@@ -317,6 +359,7 @@ if(Met=="Coincidence Factor"){
 		console.log(Trans[NHE][NHG]);
 		document.getElementById("TS").innerHTML= Trans[NHE][NHG];	
 	}
+	
 	return false;
 
 }

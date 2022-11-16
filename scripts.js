@@ -49,47 +49,42 @@ if(Met=="Diversity"){
 		var GWDF = GW*DFA;
 			
 			
-		if((ESDF < 14 || ESDF == 14 && ESDF > 0 ) || (EWDF < 16 || EWDF == 16 && EWDF > 0)){
+         if((ESDF < 14 || ESDF == 14 && ESDF > 0 ) && (EWDF < 16 || EWDF == 16 && EWDF > 0)){
 			TS = 10;
-			document.getElementById("TS").innerHTML= TS;
+			document.getElementById("TS").innerHTML= TS+"KVA";
 			console.log(TS);
-		}
-		if((ESDF < 21 || ESDF == 21 && ESDF > 14) || (EWDF < 24 || EWDF == 24 && EWDF > 16)){
+		}else if((ESDF < 21 || ESDF == 21 && ESDF > 14) && (EWDF < 24 || EWDF == 24 && EWDF > 16)){
 			TS = 15;
-			document.getElementById("TS").innerHTML= TS;
+			document.getElementById("TS").innerHTML= TS+"KVA";
 			console.log(TS);
-		}
-		if((ESDF < 35 || ESDF == 35 && ESDF > 21) || (EWDF < 40 || EWDF == 40 && EWDF > 24)){
+		}else if((ESDF < 35 || ESDF == 35 && ESDF > 21) && (EWDF < 40 || EWDF == 40 && EWDF > 24)){
 			TS = 25;
-			document.getElementById("TS").innerHTML= TS;
+			document.getElementById("TS").innerHTML= TS+"KVA";
 			console.log(TS);
-		}
-		
-		if((ESDF < 53 || ESDF == 53 && ESDF > 35) || (EWDF < 60 || EWDF == 60 && EWDF > 40)){
+		}else if((ESDF < 53 || ESDF == 53 && ESDF > 35) && (EWDF < 60 || EWDF == 60 && EWDF > 40)){
 			TS = 37.5;
-			document.getElementById("TS").innerHTML= TS;
+			document.getElementById("TS").innerHTML= TS+"KVA";
 			console.log(TS);
-		}
-		
-		if((ESDF < 70 || ESDF == 70 && ESDF > 53) || (EWDF < 80 || EWDF == 80 && EWDF > 60)){
+		}else if((ESDF < 70 || ESDF == 70 && ESDF > 53) && (EWDF < 80 || EWDF == 80 && EWDF > 60)){
 			TS = 50;
-			document.getElementById("TS").innerHTML= TS;
-			console.log(TS);
-		}
-		if((ESDF < 105 || ESDF == 105 && ESDF > 70) || (EWDF < 120 || EWDF == 120 && EWDF > 80)){
+			document.getElementById("TS").innerHTML= TS+"KVA";
+		}else if((ESDF < 105 || ESDF == 105 && ESDF > 70) && (EWDF < 120 || EWDF == 120 && EWDF > 80)){
 			TS = 75;
-			document.getElementById("TS").innerHTML= TS;
+			document.getElementById("TS").innerHTML= TS+"KVA";
 			console.log(TS);
-		}
-		if((ESDF < 140 || ESDF == 140 && ESDF > 105) || (EWDF < 160 || EWDF == 160 && EWDF > 120)){
+		}else if((ESDF < 140 || ESDF == 140 && ESDF > 105) && (EWDF < 160 || EWDF == 160 && EWDF > 120)){
 			TS = 100;
-			document.getElementById("TS").innerHTML= TS;
+			document.getElementById("TS").innerHTML= TS+"KVA";
 			console.log(TS);
-		}
-		if((ESDF < 234 || ESDF == 234 && ESDF > 140) || (EWDF < 267 || EWDF == 267 && EWDF > 160)){
+		}else if((ESDF < 234 || ESDF == 234 && ESDF > 140) && (EWDF < 267 || EWDF == 267 && EWDF > 160)){
 			TS = 167;
-			document.getElementById("TS").innerHTML= TS;
+			document.getElementById("TS").innerHTML= TS+"KVA";
 			console.log(TS);
+			console.log(ESDF);
+			console.log(EWDF);
+		}else{ 
+		return false
+		} 
 		}
 		
 		
@@ -113,48 +108,42 @@ if(Met=="Diversity"){
 		var GWDF = GW*DFA;
 			
 			
-	if((ESDF < 14 || ESDF == 14 && ESDF > 0 ) || (EWDF < 16 || EWDF == 16 && EWDF > 0)){
+	 if((ESDF < 14 || ESDF == 14 && ESDF > 0 ) && (EWDF < 16 || EWDF == 16 && EWDF > 0)){
 			TS = 10;
-			document.getElementById("TS").innerHTML= TS;
+			document.getElementById("TS").innerHTML= TS+"KVA";
 			console.log(TS);
-		}
-		if((ESDF < 21 || ESDF == 21 && ESDF > 14) || (EWDF < 24 || EWDF == 24 && EWDF > 16)){
+		}else if((ESDF < 21 || ESDF == 21 && ESDF > 14) && (EWDF < 24 || EWDF == 24 && EWDF > 16)){
 			TS = 15;
-			document.getElementById("TS").innerHTML= TS;
+			document.getElementById("TS").innerHTML= TS+"KVA";
 			console.log(TS);
-		}
-		if((ESDF < 35 || ESDF == 35 && ESDF > 21) || (EWDF < 40 || EWDF == 40 && EWDF > 24)){
+		}else if((ESDF < 35 || ESDF == 35 && ESDF > 21) && (EWDF < 40 || EWDF == 40 && EWDF > 24)){
 			TS = 25;
-			document.getElementById("TS").innerHTML= TS;
+			document.getElementById("TS").innerHTML= TS+"KVA";
 			console.log(TS);
-		}
-		
-		if((ESDF < 53 || ESDF == 53 && ESDF > 35) || (EWDF < 60 || EWDF == 60 && EWDF > 40)){
+		}else if((ESDF < 53 || ESDF == 53 && ESDF > 35) && (EWDF < 60 || EWDF == 60 && EWDF > 40)){
 			TS = 37.5;
-			document.getElementById("TS").innerHTML= TS;
+			document.getElementById("TS").innerHTML= TS+"KVA";
 			console.log(TS);
-		}
-		
-		if((ESDF < 70 || ESDF == 70 && ESDF > 53) || (EWDF < 80 || EWDF == 80 && EWDF > 60)){
+		}else if((ESDF < 70 || ESDF == 70 && ESDF > 53) && (EWDF < 80 || EWDF == 80 && EWDF > 60)){
 			TS = 50;
-			document.getElementById("TS").innerHTML= TS;
-			console.log(TS);
-		}
-		if((ESDF < 105 || ESDF == 105 && ESDF > 70) || (EWDF < 120 || EWDF == 120 && EWDF > 80)){
+			document.getElementById("TS").innerHTML= TS+"KVA";
+		}else if((ESDF < 105 || ESDF == 105 && ESDF > 70) && (EWDF < 120 || EWDF == 120 && EWDF > 80)){
 			TS = 75;
-			document.getElementById("TS").innerHTML= TS;
+			document.getElementById("TS").innerHTML= TS+"KVA";
 			console.log(TS);
-		}
-		if((ESDF < 140 || ESDF == 140 && ESDF > 105) || (EWDF < 160 || EWDF == 160 && EWDF > 120)){
+		}else if((ESDF < 140 || ESDF == 140 && ESDF > 105) && (EWDF < 160 || EWDF == 160 && EWDF > 120)){
 			TS = 100;
-			document.getElementById("TS").innerHTML= TS;
+			document.getElementById("TS").innerHTML= TS+"KVA";
 			console.log(TS);
-		}
-		if((ESDF < 234 || ESDF == 234 && ESDF > 140) || (EWDF < 267 || EWDF == 267 && EWDF > 160)){
+		}else if((ESDF < 234 || ESDF == 234 && ESDF > 140) && (EWDF < 267 || EWDF == 267 && EWDF > 160)){
 			TS = 167;
-			document.getElementById("TS").innerHTML= TS;
+			document.getElementById("TS").innerHTML= TS+"KVA";
 			console.log(TS);
-		}
+			console.log(ESDF);
+			console.log(EWDF);
+		}else{ 
+		return false
+		} 
 		
 	}
 		
@@ -176,48 +165,42 @@ if(Met=="Diversity"){
 		var GWDF = GW*DFA;
 			
 			
-        if((ESDF < 14 || ESDF == 14 && ESDF > 0 ) || (EWDF < 16 || EWDF == 16 && EWDF > 0)){
+     if((ESDF < 14 || ESDF == 14 && ESDF > 0 ) && (EWDF < 16 || EWDF == 16 && EWDF > 0)){
 			TS = 10;
-			document.getElementById("TS").innerHTML= TS;
+			document.getElementById("TS").innerHTML= TS+"KVA";
 			console.log(TS);
-		}
-		if((ESDF < 21 || ESDF == 21 && ESDF > 14) || (EWDF < 24 || EWDF == 24 && EWDF > 16)){
+		}else if((ESDF < 21 || ESDF == 21 && ESDF > 14) && (EWDF < 24 || EWDF == 24 && EWDF > 16)){
 			TS = 15;
-			document.getElementById("TS").innerHTML= TS;
+			document.getElementById("TS").innerHTML= TS+"KVA";
 			console.log(TS);
-		}
-		if((ESDF < 35 || ESDF == 35 && ESDF > 21) || (EWDF < 40 || EWDF == 40 && EWDF > 24)){
+		}else if((ESDF < 35 || ESDF == 35 && ESDF > 21) && (EWDF < 40 || EWDF == 40 && EWDF > 24)){
 			TS = 25;
-			document.getElementById("TS").innerHTML= TS;
+			document.getElementById("TS").innerHTML= TS+"KVA";
 			console.log(TS);
-		}
-		
-		if((ESDF < 53 || ESDF == 53 && ESDF > 35) || (EWDF < 60 || EWDF == 60 && EWDF > 40)){
+		}else if((ESDF < 53 || ESDF == 53 && ESDF > 35) && (EWDF < 60 || EWDF == 60 && EWDF > 40)){
 			TS = 37.5;
-			document.getElementById("TS").innerHTML= TS;
+			document.getElementById("TS").innerHTML= TS+"KVA";
 			console.log(TS);
-		}
-		
-		if((ESDF < 70 || ESDF == 70 && ESDF > 53) || (EWDF < 80 || EWDF == 80 && EWDF > 60)){
+		}else if((ESDF < 70 || ESDF == 70 && ESDF > 53) && (EWDF < 80 || EWDF == 80 && EWDF > 60)){
 			TS = 50;
-			document.getElementById("TS").innerHTML= TS;
-			console.log(TS);
-		}
-		if((ESDF < 105 || ESDF == 105 && ESDF > 70) || (EWDF < 120 || EWDF == 120 && EWDF > 80)){
+			document.getElementById("TS").innerHTML= TS+"KVA";
+		}else if((ESDF < 105 || ESDF == 105 && ESDF > 70) && (EWDF < 120 || EWDF == 120 && EWDF > 80)){
 			TS = 75;
-			document.getElementById("TS").innerHTML= TS;
-		}
-		if((ESDF < 140 || ESDF == 140 && ESDF > 105) || (EWDF < 160 || EWDF == 160 && EWDF > 120)){
+			document.getElementById("TS").innerHTML= TS+"KVA";
+			console.log(TS);
+		}else if((ESDF < 140 || ESDF == 140 && ESDF > 105) && (EWDF < 160 || EWDF == 160 && EWDF > 120)){
 			TS = 100;
-			document.getElementById("TS").innerHTML= TS;
+			document.getElementById("TS").innerHTML= TS+"KVA";
 			console.log(TS);
-		}
-		if((ESDF < 234 || ESDF == 234 && ESDF > 140) || (EWDF < 267 || EWDF == 267 && EWDF > 160)){
+		}else if((ESDF < 234 || ESDF == 234 && ESDF > 140) && (EWDF < 267 || EWDF == 267 && EWDF > 160)){
 			TS = 167;
-			document.getElementById("TS").innerHTML= TS;
+			document.getElementById("TS").innerHTML= TS+"KVA";
 			console.log(TS);
-		}
-		
+			console.log(ESDF);
+			console.log(EWDF);
+		}else{ 
+		return false
+		} 
 		
 	}
 	if(SF=="2400"){
@@ -238,49 +221,42 @@ if(Met=="Diversity"){
 		var GWDF = GW*DFA;
 			
 			
-	      if((ESDF < 14 || ESDF == 14 && ESDF > 0 ) || (EWDF < 16 || EWDF == 16 && EWDF > 0)){
+      if((ESDF < 14 || ESDF == 14 && ESDF > 0 ) && (EWDF < 16 || EWDF == 16 && EWDF > 0)){
 			TS = 10;
-			document.getElementById("TS").innerHTML= TS;
+			document.getElementById("TS").innerHTML= TS+"KVA";
 			console.log(TS);
-		}
-		if((ESDF < 21 || ESDF == 21 && ESDF > 14) || (EWDF < 24 || EWDF == 24 && EWDF > 16)){
+		}else if((ESDF < 21 || ESDF == 21 && ESDF > 14) && (EWDF < 24 || EWDF == 24 && EWDF > 16)){
 			TS = 15;
-			document.getElementById("TS").innerHTML= TS;
+			document.getElementById("TS").innerHTML= TS+"KVA";
 			console.log(TS);
-		}
-		if((ESDF < 35 || ESDF == 35 && ESDF > 21) || (EWDF < 40 || EWDF == 40 && EWDF > 24)){
+		}else if((ESDF < 35 || ESDF == 35 && ESDF > 21) && (EWDF < 40 || EWDF == 40 && EWDF > 24)){
 			TS = 25;
-			document.getElementById("TS").innerHTML= TS;
+			document.getElementById("TS").innerHTML= TS+"KVA";
 			console.log(TS);
-		}
-		
-		if((ESDF < 53 || ESDF == 53 && ESDF > 35) || (EWDF < 60 || EWDF == 60 && EWDF > 40)){
+		}else if((ESDF < 53 || ESDF == 53 && ESDF > 35) && (EWDF < 60 || EWDF == 60 && EWDF > 40)){
 			TS = 37.5;
-			document.getElementById("TS").innerHTML= TS;
+			document.getElementById("TS").innerHTML= TS+"KVA";
 			console.log(TS);
-		}
-		
-		if((ESDF < 70 || ESDF == 70 && ESDF > 53) || (EWDF < 80 || EWDF == 80 && EWDF > 60)){
+		}else if((ESDF < 70 || ESDF == 70 && ESDF > 53) && (EWDF < 80 || EWDF == 80 && EWDF > 60)){
 			TS = 50;
-			document.getElementById("TS").innerHTML= TS;
-			console.log(TS);
-		}
-		if((ESDF < 105 || ESDF == 105 && ESDF > 70) || (EWDF < 120 || EWDF == 120 && EWDF > 80)){
+			document.getElementById("TS").innerHTML= TS+"KVA";
+		}else if((ESDF < 105 || ESDF == 105 && ESDF > 70) && (EWDF < 120 || EWDF == 120 && EWDF > 80)){
 			TS = 75;
-			document.getElementById("TS").innerHTML= TS;
+			document.getElementById("TS").innerHTML= TS+"KVA";
 			console.log(TS);
-		}
-		if((ESDF < 140 || ESDF == 140 && ESDF > 105) || (EWDF < 160 || EWDF == 160 && EWDF > 120)){
+		}else if((ESDF < 140 || ESDF == 140 && ESDF > 105) && (EWDF < 160 || EWDF == 160 && EWDF > 120)){
 			TS = 100;
-			document.getElementById("TS").innerHTML= TS;
+			document.getElementById("TS").innerHTML= TS+"KVA";
 			console.log(TS);
-		}
-		if((ESDF < 234 || ESDF == 234 && ESDF > 140) || (EWDF < 267 || EWDF == 267 && EWDF > 160)){
+		}else if((ESDF < 234 || ESDF == 234 && ESDF > 140) && (EWDF < 267 || EWDF == 267 && EWDF > 160)){
 			TS = 167;
-			document.getElementById("TS").innerHTML= TS;
+			document.getElementById("TS").innerHTML= TS+"KVA";
 			console.log(TS);
-		}
-		
+			console.log(ESDF);
+			console.log(EWDF);
+		}else{ 
+		return false
+		} 
 		
 	}
 	if(SF=="3000"){
@@ -302,47 +278,42 @@ if(Met=="Diversity"){
 		var GWDF = GW*DFA;
 			
 			
-	    if((ESDF < 14 || ESDF == 14 && ESDF > 0 ) || (EWDF < 16 || EWDF == 16 && EWDF > 0)){
+         if((ESDF < 14 || ESDF == 14 && ESDF > 0 ) && (EWDF < 16 || EWDF == 16 && EWDF > 0)){
 			TS = 10;
-			document.getElementById("TS").innerHTML= TS;
+			document.getElementById("TS").innerHTML= TS+"KVA";
 			console.log(TS);
-		}
-		if((ESDF < 21 || ESDF == 21 && ESDF > 14) || (EWDF < 24 || EWDF == 24 && EWDF > 16)){
+		}else if((ESDF < 21 || ESDF == 21 && ESDF > 14) && (EWDF < 24 || EWDF == 24 && EWDF > 16)){
 			TS = 15;
-			document.getElementById("TS").innerHTML= TS;
+			document.getElementById("TS").innerHTML= TS+"KVA";
 			console.log(TS);
-		}
-		if((ESDF < 35 || ESDF == 35 && ESDF > 21) || (EWDF < 40 || EWDF == 40 && EWDF > 24)){
+		}else if((ESDF < 35 || ESDF == 35 && ESDF > 21) && (EWDF < 40 || EWDF == 40 && EWDF > 24)){
 			TS = 25;
-			document.getElementById("TS").innerHTML= TS;
+			document.getElementById("TS").innerHTML= TS+"KVA";
 			console.log(TS);
-		}
-		
-		if((ESDF < 53 || ESDF == 53 && ESDF > 35) || (EWDF < 60 || EWDF == 60 && EWDF > 40)){
+		}else if((ESDF < 53 || ESDF == 53 && ESDF > 35) && (EWDF < 60 || EWDF == 60 && EWDF > 40)){
 			TS = 37.5;
-			document.getElementById("TS").innerHTML= TS;
+			document.getElementById("TS").innerHTML= TS+"KVA";
 			console.log(TS);
-		}
-		
-		if((ESDF < 70 || ESDF == 70 && ESDF > 53) || (EWDF < 80 || EWDF == 80 && EWDF > 60)){
+		}else if((ESDF < 70 || ESDF == 70 && ESDF > 53) && (EWDF < 80 || EWDF == 80 && EWDF > 60)){
 			TS = 50;
-			document.getElementById("TS").innerHTML= TS;
-		}
-		if((ESDF < 105 || ESDF == 105 && ESDF > 70) || (EWDF < 120 || EWDF == 120 && EWDF > 80)){
+			document.getElementById("TS").innerHTML= TS+"KVA";
+		}else if((ESDF < 105 || ESDF == 105 && ESDF > 70) && (EWDF < 120 || EWDF == 120 && EWDF > 80)){
 			TS = 75;
-			document.getElementById("TS").innerHTML= TS;
+			document.getElementById("TS").innerHTML= TS+"KVA";
 			console.log(TS);
-		}
-		if((ESDF < 140 || ESDF == 140 && ESDF > 105) || (EWDF < 160 || EWDF == 160 && EWDF > 120)){
+		}else if((ESDF < 140 || ESDF == 140 && ESDF > 105) && (EWDF < 160 || EWDF == 160 && EWDF > 120)){
 			TS = 100;
-			document.getElementById("TS").innerHTML= TS;
+			document.getElementById("TS").innerHTML= TS+"KVA";
 			console.log(TS);
-		}
-		if((ESDF < 234 || ESDF == 234 && ESDF > 140) || (EWDF < 267 || EWDF == 267 && EWDF > 160)){
+		}else if((ESDF < 234 || ESDF == 234 && ESDF > 140) && (EWDF < 267 || EWDF == 267 && EWDF > 160)){
 			TS = 167;
-			document.getElementById("TS").innerHTML= TS;
+			document.getElementById("TS").innerHTML= TS+"KVA";
 			console.log(TS);
-		}
+			console.log(ESDF);
+			console.log(EWDF);
+		}else{ 
+		return false
+		} 
 		
 		
 }

@@ -82,9 +82,7 @@ if(Met=="Diversity"){
 			console.log(TS);
 			console.log(ESDF);
 			console.log(EWDF);
-		}else{ 
-		return false
-		} 
+		}
 		}
 		
 		
@@ -141,9 +139,7 @@ if(Met=="Diversity"){
 			console.log(TS);
 			console.log(ESDF);
 			console.log(EWDF);
-		}else{ 
-		return false
-		} 
+		}
 		
 	}
 		
@@ -254,9 +250,7 @@ if(Met=="Diversity"){
 			console.log(TS);
 			console.log(ESDF);
 			console.log(EWDF);
-		}else{ 
-		return false
-		} 
+		}
 		
 	}
 	if(SF=="3000"){
@@ -311,9 +305,7 @@ if(Met=="Diversity"){
 			console.log(TS);
 			console.log(ESDF);
 			console.log(EWDF);
-		}else{ 
-		return false
-		} 
+		}
 		
 		
 }

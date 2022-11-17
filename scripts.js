@@ -52,7 +52,7 @@ if(Met=="Diversity"){
 			
      if((ESDF < 14 || ESDF == 14 && ESDF > 0 ) && (EWDF < 16 || EWDF == 16 && EWDF > 0)){
 			TS = 10;
-			document.getElementById("TS").innerHTML= TS+"KVA";
+			document.getElementById("TS").innerHTML= "Transformer Size:"TS+"KVA";
 			console.log(TS);
 			
 	  if (TS== 5){
@@ -87,7 +87,7 @@ if(Met=="Diversity"){
 	}
 		}else if((ESDF < 21 || ESDF == 21 && ESDF > 14) && (EWDF < 24 || EWDF == 24 && EWDF > 16)){
 			TS = 15;
-			document.getElementById("TS").innerHTML= TS+"KVA";
+			document.getElementById("TS").innerHTML= "Transformer Size:"TS+"KVA";
 			console.log(TS);
 			
 			
@@ -123,7 +123,7 @@ if(Met=="Diversity"){
 	}
 		}else if((ESDF < 35 || ESDF == 35 && ESDF > 21) && (EWDF < 40 || EWDF == 40 && EWDF > 24)){
 			TS = 25;
-			document.getElementById("TS").innerHTML= TS+"KVA";
+			document.getElementById("TS").innerHTML= "Transformer Size:"TS+"KVA";
 			console.log(TS);
 			
 	  if (TS== 5){
@@ -158,7 +158,7 @@ if(Met=="Diversity"){
 	}
 		}else if((ESDF < 53 || ESDF == 53 && ESDF > 35) && (EWDF < 60 || EWDF == 60 && EWDF > 40)){
 			TS = 37.5;
-			document.getElementById("TS").innerHTML= TS+"KVA";
+			document.getElementById("TS").innerHTML= "Transformer Size:"TS+"KVA";
 			console.log(TS);
 			
 			
@@ -194,7 +194,7 @@ if(Met=="Diversity"){
 	}
 		}else if((ESDF < 70 || ESDF == 70 && ESDF > 53) && (EWDF < 80 || EWDF == 80 && EWDF > 60)){
 			TS = 50;
-			document.getElementById("TS").innerHTML= TS+"KVA";
+			document.getElementById("TS").innerHTML= "Transformer Size:"TS+"KVA";
 			
 	  if (TS== 5){
 		  Cost="$"+7475.11+"USD";
@@ -228,7 +228,7 @@ if(Met=="Diversity"){
 	}
 		}else if((ESDF < 105 || ESDF == 105 && ESDF > 70) && (EWDF < 120 || EWDF == 120 && EWDF > 80)){
 			TS = 75;
-			document.getElementById("TS").innerHTML= TS+"KVA";
+			document.getElementById("TS").innerHTML= "Transformer Size:"TS+"KVA";
 			console.log(TS);
 			
 	  if (TS== 5){
@@ -263,7 +263,7 @@ if(Met=="Diversity"){
 	}
 		}else if((ESDF < 140 || ESDF == 140 && ESDF > 105) && (EWDF < 160 || EWDF == 160 && EWDF > 120)){
 			TS = 100;
-			document.getElementById("TS").innerHTML= TS+"KVA";
+			document.getElementById("TS").innerHTML= "Transformer Size:"TS+"KVA";
 			console.log(TS);
 			
 	  if (TS== 5){
@@ -298,7 +298,7 @@ if(Met=="Diversity"){
 	}
 		}else if((ESDF < 234 || ESDF == 234 && ESDF > 140) && (EWDF < 267 || EWDF == 267 && EWDF > 160)){
 			TS = 167;
-			document.getElementById("TS").innerHTML= TS+"KVA";
+			document.getElementById("TS").innerHTML= "Transformer Size:"TS+"KVA";
 			console.log(TS);
 			console.log(ESDF);
 			console.log(EWDF);
@@ -359,7 +359,7 @@ if(Met=="Diversity"){
 			
      if((ESDF < 14 || ESDF == 14 && ESDF > 0 ) && (EWDF < 16 || EWDF == 16 && EWDF > 0)){
 			TS = 10;
-			document.getElementById("TS").innerHTML= TS+"KVA";
+			document.getElementById("TS").innerHTML= "Transformer Size:"TS+"KVA";
 			console.log(TS);
 			
 	  if (TS== 5){
@@ -394,7 +394,7 @@ if(Met=="Diversity"){
 	}
 		}else if((ESDF < 21 || ESDF == 21 && ESDF > 14) && (EWDF < 24 || EWDF == 24 && EWDF > 16)){
 			TS = 15;
-			document.getElementById("TS").innerHTML= TS+"KVA";
+			document.getElementById("TS").innerHTML= "Transformer Size:"TS+"KVA";
 			console.log(TS);
 			
 			
@@ -430,7 +430,7 @@ if(Met=="Diversity"){
 	}
 		}else if((ESDF < 35 || ESDF == 35 && ESDF > 21) && (EWDF < 40 || EWDF == 40 && EWDF > 24)){
 			TS = 25;
-			document.getElementById("TS").innerHTML= TS+"KVA";
+			document.getElementById("TS").innerHTML= "Transformer Size:"TS+"KVA";
 			console.log(TS);
 			
 	  if (TS== 5){
@@ -465,7 +465,7 @@ if(Met=="Diversity"){
 	}
 		}else if((ESDF < 53 || ESDF == 53 && ESDF > 35) && (EWDF < 60 || EWDF == 60 && EWDF > 40)){
 			TS = 37.5;
-			document.getElementById("TS").innerHTML= TS+"KVA";
+			document.getElementById("TS").innerHTML= "Transformer Size:"TS+"KVA";
 			console.log(TS);
 			
 			
@@ -501,7 +501,7 @@ if(Met=="Diversity"){
 	}
 		}else if((ESDF < 70 || ESDF == 70 && ESDF > 53) && (EWDF < 80 || EWDF == 80 && EWDF > 60)){
 			TS = 50;
-			document.getElementById("TS").innerHTML= TS+"KVA";
+			document.getElementById("TS").innerHTML= "Transformer Size:"TS+"KVA";
 			
 	  if (TS== 5){
 		  Cost="$"+7475.11+"USD";
@@ -535,7 +535,7 @@ if(Met=="Diversity"){
 	}
 		}else if((ESDF < 105 || ESDF == 105 && ESDF > 70) && (EWDF < 120 || EWDF == 120 && EWDF > 80)){
 			TS = 75;
-			document.getElementById("TS").innerHTML= TS+"KVA";
+			document.getElementById("TS").innerHTML= "Transformer Size:"TS+"KVA";
 			console.log(TS);
 			
 	  if (TS== 5){
@@ -570,7 +570,7 @@ if(Met=="Diversity"){
 	}
 		}else if((ESDF < 140 || ESDF == 140 && ESDF > 105) && (EWDF < 160 || EWDF == 160 && EWDF > 120)){
 			TS = 100;
-			document.getElementById("TS").innerHTML= TS+"KVA";
+			document.getElementById("TS").innerHTML= "Transformer Size:"TS+"KVA";
 			console.log(TS);
 			
 	  if (TS== 5){
@@ -605,7 +605,7 @@ if(Met=="Diversity"){
 	}
 		}else if((ESDF < 234 || ESDF == 234 && ESDF > 140) && (EWDF < 267 || EWDF == 267 && EWDF > 160)){
 			TS = 167;
-			document.getElementById("TS").innerHTML= TS+"KVA";
+			document.getElementById("TS").innerHTML= "Transformer Size:"TS+"KVA";
 			console.log(TS);
 			console.log(ESDF);
 			console.log(EWDF);
@@ -663,7 +663,7 @@ if(Met=="Diversity"){
 			
      if((ESDF < 14 || ESDF == 14 && ESDF > 0 ) && (EWDF < 16 || EWDF == 16 && EWDF > 0)){
 			TS = 10;
-			document.getElementById("TS").innerHTML= TS+"KVA";
+			document.getElementById("TS").innerHTML= "Transformer Size:"TS+"KVA";
 			console.log(TS);
 			
 	  if (TS== 5){
@@ -698,7 +698,7 @@ if(Met=="Diversity"){
 	}
 		}else if((ESDF < 21 || ESDF == 21 && ESDF > 14) && (EWDF < 24 || EWDF == 24 && EWDF > 16)){
 			TS = 15;
-			document.getElementById("TS").innerHTML= TS+"KVA";
+			document.getElementById("TS").innerHTML= "Transformer Size:"TS+"KVA";
 			console.log(TS);
 			
 			
@@ -734,7 +734,7 @@ if(Met=="Diversity"){
 	}
 		}else if((ESDF < 35 || ESDF == 35 && ESDF > 21) && (EWDF < 40 || EWDF == 40 && EWDF > 24)){
 			TS = 25;
-			document.getElementById("TS").innerHTML= TS+"KVA";
+			document.getElementById("TS").innerHTML= "Transformer Size:"TS+"KVA";
 			console.log(TS);
 			
 	  if (TS== 5){
@@ -769,7 +769,7 @@ if(Met=="Diversity"){
 	}
 		}else if((ESDF < 53 || ESDF == 53 && ESDF > 35) && (EWDF < 60 || EWDF == 60 && EWDF > 40)){
 			TS = 37.5;
-			document.getElementById("TS").innerHTML= TS+"KVA";
+			document.getElementById("TS").innerHTML= "Transformer Size:"TS+"KVA";
 			console.log(TS);
 			
 			
@@ -805,7 +805,7 @@ if(Met=="Diversity"){
 	}
 		}else if((ESDF < 70 || ESDF == 70 && ESDF > 53) && (EWDF < 80 || EWDF == 80 && EWDF > 60)){
 			TS = 50;
-			document.getElementById("TS").innerHTML= TS+"KVA";
+			document.getElementById("TS").innerHTML= "Transformer Size:"TS+"KVA";
 			
 	  if (TS== 5){
 		  Cost="$"+7475.11+"USD";
@@ -839,7 +839,7 @@ if(Met=="Diversity"){
 	}
 		}else if((ESDF < 105 || ESDF == 105 && ESDF > 70) && (EWDF < 120 || EWDF == 120 && EWDF > 80)){
 			TS = 75;
-			document.getElementById("TS").innerHTML= TS+"KVA";
+			document.getElementById("TS").innerHTML= "Transformer Size:"TS+"KVA";
 			console.log(TS);
 			
 	  if (TS== 5){
@@ -874,7 +874,7 @@ if(Met=="Diversity"){
 	}
 		}else if((ESDF < 140 || ESDF == 140 && ESDF > 105) && (EWDF < 160 || EWDF == 160 && EWDF > 120)){
 			TS = 100;
-			document.getElementById("TS").innerHTML= TS+"KVA";
+			document.getElementById("TS").innerHTML= "Transformer Size:"TS+"KVA";
 			console.log(TS);
 			
 	  if (TS== 5){
@@ -909,7 +909,7 @@ if(Met=="Diversity"){
 	}
 		}else if((ESDF < 234 || ESDF == 234 && ESDF > 140) && (EWDF < 267 || EWDF == 267 && EWDF > 160)){
 			TS = 167;
-			document.getElementById("TS").innerHTML= TS+"KVA";
+			document.getElementById("TS").innerHTML= "Transformer Size:"TS+"KVA";
 			console.log(TS);
 			console.log(ESDF);
 			console.log(EWDF);
@@ -967,7 +967,7 @@ if(Met=="Diversity"){
 			
      if((ESDF < 14 || ESDF == 14 && ESDF > 0 ) && (EWDF < 16 || EWDF == 16 && EWDF > 0)){
 			TS = 10;
-			document.getElementById("TS").innerHTML= TS+"KVA";
+			document.getElementById("TS").innerHTML= "Transformer Size:"TS+"KVA";
 			console.log(TS);
 			
 	  if (TS== 5){
@@ -1002,7 +1002,7 @@ if(Met=="Diversity"){
 	}
 		}else if((ESDF < 21 || ESDF == 21 && ESDF > 14) && (EWDF < 24 || EWDF == 24 && EWDF > 16)){
 			TS = 15;
-			document.getElementById("TS").innerHTML= TS+"KVA";
+			document.getElementById("TS").innerHTML= "Transformer Size:"TS+"KVA";
 			console.log(TS);
 			
 			
@@ -1038,7 +1038,7 @@ if(Met=="Diversity"){
 	}
 		}else if((ESDF < 35 || ESDF == 35 && ESDF > 21) && (EWDF < 40 || EWDF == 40 && EWDF > 24)){
 			TS = 25;
-			document.getElementById("TS").innerHTML= TS+"KVA";
+			document.getElementById("TS").innerHTML= "Transformer Size:"TS+"KVA";
 			console.log(TS);
 			
 	  if (TS== 5){
@@ -1073,7 +1073,7 @@ if(Met=="Diversity"){
 	}
 		}else if((ESDF < 53 || ESDF == 53 && ESDF > 35) && (EWDF < 60 || EWDF == 60 && EWDF > 40)){
 			TS = 37.5;
-			document.getElementById("TS").innerHTML= TS+"KVA";
+			document.getElementById("TS").innerHTML= "Transformer Size:"TS+"KVA";
 			console.log(TS);
 			
 			
@@ -1109,7 +1109,7 @@ if(Met=="Diversity"){
 	}
 		}else if((ESDF < 70 || ESDF == 70 && ESDF > 53) && (EWDF < 80 || EWDF == 80 && EWDF > 60)){
 			TS = 50;
-			document.getElementById("TS").innerHTML= TS+"KVA";
+			document.getElementById("TS").innerHTML= "Transformer Size:"TS+"KVA";
 			
 	  if (TS== 5){
 		  Cost="$"+7475.11+"USD";
@@ -1143,7 +1143,7 @@ if(Met=="Diversity"){
 	}
 		}else if((ESDF < 105 || ESDF == 105 && ESDF > 70) && (EWDF < 120 || EWDF == 120 && EWDF > 80)){
 			TS = 75;
-			document.getElementById("TS").innerHTML= TS+"KVA";
+			document.getElementById("TS").innerHTML= "Transformer Size:"TS+"KVA";
 			console.log(TS);
 			
 	  if (TS== 5){
@@ -1178,7 +1178,7 @@ if(Met=="Diversity"){
 	}
 		}else if((ESDF < 140 || ESDF == 140 && ESDF > 105) && (EWDF < 160 || EWDF == 160 && EWDF > 120)){
 			TS = 100;
-			document.getElementById("TS").innerHTML= TS+"KVA";
+			document.getElementById("TS").innerHTML= "Transformer Size:"TS+"KVA";
 			console.log(TS);
 			
 	  if (TS== 5){
@@ -1213,7 +1213,7 @@ if(Met=="Diversity"){
 	}
 		}else if((ESDF < 234 || ESDF == 234 && ESDF > 140) && (EWDF < 267 || EWDF == 267 && EWDF > 160)){
 			TS = 167;
-			document.getElementById("TS").innerHTML= TS+"KVA";
+			document.getElementById("TS").innerHTML= "Transformer Size:"TS+"KVA";
 			console.log(TS);
 			console.log(ESDF);
 			console.log(EWDF);
@@ -1272,7 +1272,7 @@ if(Met=="Diversity"){
 			
          if((ESDF < 14 || ESDF == 14 && ESDF > 0 ) && (EWDF < 16 || EWDF == 16 && EWDF > 0)){
 			TS = 10;
-			document.getElementById("TS").innerHTML= TS+"KVA";
+			document.getElementById("TS").innerHTML= "Transformer Size:"TS+"KVA";
 			console.log(TS);
 			
 	  if (TS== 5){
@@ -1307,7 +1307,7 @@ if(Met=="Diversity"){
 	}
 		}else if((ESDF < 21 || ESDF == 21 && ESDF > 14) && (EWDF < 24 || EWDF == 24 && EWDF > 16)){
 			TS = 15;
-			document.getElementById("TS").innerHTML= TS+"KVA";
+			document.getElementById("TS").innerHTML= "Transformer Size:"TS+"KVA";
 			console.log(TS);
 			
 			
@@ -1343,7 +1343,7 @@ if(Met=="Diversity"){
 	}
 		}else if((ESDF < 35 || ESDF == 35 && ESDF > 21) && (EWDF < 40 || EWDF == 40 && EWDF > 24)){
 			TS = 25;
-			document.getElementById("TS").innerHTML= TS+"KVA";
+			document.getElementById("TS").innerHTML= "Transformer Size:"TS+"KVA";
 			console.log(TS);
 			
 	  if (TS== 5){
@@ -1378,7 +1378,7 @@ if(Met=="Diversity"){
 	}
 		}else if((ESDF < 53 || ESDF == 53 && ESDF > 35) && (EWDF < 60 || EWDF == 60 && EWDF > 40)){
 			TS = 37.5;
-			document.getElementById("TS").innerHTML= TS+"KVA";
+			document.getElementById("TS").innerHTML= "Transformer Size:"TS+"KVA";
 			console.log(TS);
 			
 			
@@ -1414,7 +1414,7 @@ if(Met=="Diversity"){
 	}
 		}else if((ESDF < 70 || ESDF == 70 && ESDF > 53) && (EWDF < 80 || EWDF == 80 && EWDF > 60)){
 			TS = 50;
-			document.getElementById("TS").innerHTML= TS+"KVA";
+			document.getElementById("TS").innerHTML= "Transformer Size:"TS+"KVA";
 			
 	  if (TS== 5){
 		  Cost="$"+7475.11+"USD";
@@ -1448,7 +1448,7 @@ if(Met=="Diversity"){
 	}
 		}else if((ESDF < 105 || ESDF == 105 && ESDF > 70) && (EWDF < 120 || EWDF == 120 && EWDF > 80)){
 			TS = 75;
-			document.getElementById("TS").innerHTML= TS+"KVA";
+			document.getElementById("TS").innerHTML= "Transformer Size:"TS+"KVA";
 			console.log(TS);
 			
 	  if (TS== 5){
@@ -1483,7 +1483,7 @@ if(Met=="Diversity"){
 	}
 		}else if((ESDF < 140 || ESDF == 140 && ESDF > 105) && (EWDF < 160 || EWDF == 160 && EWDF > 120)){
 			TS = 100;
-			document.getElementById("TS").innerHTML= TS+"KVA";
+			document.getElementById("TS").innerHTML= "Transformer Size:"TS+"KVA";
 			console.log(TS);
 			
 	  if (TS== 5){
@@ -1518,7 +1518,7 @@ if(Met=="Diversity"){
 	}
 		}else if((ESDF < 234 || ESDF == 234 && ESDF > 140) && (EWDF < 267 || EWDF == 267 && EWDF > 160)){
 			TS = 167;
-			document.getElementById("TS").innerHTML= TS+"KVA";
+			document.getElementById("TS").innerHTML= "Transformer Size:"TS+"KVA";
 			console.log(TS);
 			console.log(ESDF);
 			console.log(EWDF);
@@ -1569,7 +1569,7 @@ if(Met=="Coincidence Factor"){
 		console.log(NHE);
 		console.log(NHG);
 		console.log(Trans[NHE][NHG]);
-		document.getElementById("TS").innerHTML= Trans[NHE][NHG]+"KVA";	
+		document.getElementById("TS").innerHTML="Transformer Size:" Trans[NHE][NHG]+"KVA";	
 		
 	  if (Trans[NHE][NH]== 5){
 		  Cost="$"+7475.11+"USD";

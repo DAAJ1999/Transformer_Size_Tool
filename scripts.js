@@ -17,6 +17,7 @@ function fn1()
 	var NHE = document.getElementById("InputnumberofhousesElectric").valueAsNumber;
 	var NH = document.getElementById("NH").valueAsNumber; 
 	var LSF= document.getElementById("SquareFootSize1").value;
+	var Cost= 0;
 	var TS = 0;
     var Trans=[
 		[0,25,25,25,25,25,50,50,50,50,50,100,100,100,100],
@@ -320,7 +321,28 @@ if(Met=="Coincidence Factor"){
 		console.log(NHE);
 		console.log(NHG);
 		console.log(Trans[NHE][NHG]);
-		document.getElementById("TS").innerHTML= Trans[NHE][NHG];	
+		document.getElementById("TS").innerHTML= Trans[NHE][NHG]+"KVA";	
+		
+	  if (Trans[NHE][NH]= 5){
+		  Cost="$"+7475.11+"USD";
+	  }else if (Trans[NHE][NH]= 10{
+		  Cost="$"+7921.34+"USD";
+	  }else if (Trans[NHE][NH]= 15{
+		  Cost="$"+8850.54+"USD";
+	  }else if (Trans[NHE][NH]= 25{
+		  Cost="$"+10226.66+"USD";
+	  }else if (Trans[NHE][NH]= 37.5{
+		  Cost="$"+13641.59+"USD";
+	  }else if (Trans[NHE][NH]= 50{
+		  Cost="$"+14171.88+"USD";
+	  }else if (Trans[NHE][NH]= 75{
+		  Cost="$"+15308.08+"USD";
+	  }else if (Trans[NHE][NH]= 100{
+		  Cost="$"+18556.83+"USD";
+	  }else if (Trans[NHE][NH]= 167{
+		  Cost="$"+21021.43+"USD";
+	  }
+      document.getElementById("COST").innerHTML="The Transformer will Cost:"+Cost;	
 	}
 	
 	return false;

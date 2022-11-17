@@ -1569,7 +1569,7 @@ if(Met=="Coincidence Factor"){
 		console.log(NHE);
 		console.log(NHG);
 		console.log(Trans[NHE][NHG]);
-		document.getElementById("TS").innerHTML="Transformer Size:" Trans[NHE][NHG]+"KVA";	
+		document.getElementById("TS").innerHTML="Transformer Size:" +Trans[NHE][NHG]+"KVA";	
 		
 	  if (Trans[NHE][NH]== 5){
 		  Cost="$"+7475.11+"USD";

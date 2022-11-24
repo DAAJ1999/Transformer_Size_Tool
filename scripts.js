@@ -1606,7 +1606,7 @@ if(Met=="Coincidence Factor"){
 	return false;
 
 }
-
+}
 
 //function updateItems(_this) {
  // var ItemCount = + _this.value //get the value
@@ -1627,4 +1627,3 @@ if(Met=="Coincidence Factor"){
 	
 	
  // }
-}

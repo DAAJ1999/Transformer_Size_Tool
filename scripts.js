@@ -1606,7 +1606,11 @@ if(Met=="Coincidence Factor"){
 	return false;
 
 }
+function refreshPage(){
+    window.parent.location = window.parent.location.href;
 }
+}
+
 
 //function updateItems(_this) {
  // var ItemCount = + _this.value //get the value

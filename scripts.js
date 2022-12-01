@@ -1559,7 +1559,7 @@ if(Met=="Diversity"){
 
 }
 
-
+}
 	
 if(Met=="Coincidence Factor"){
 }
@@ -1607,7 +1607,7 @@ if(Met=="Coincidence Factor"){
 	return false;
 }
  
-}
+
 
 
 //function updateItems(_this) {

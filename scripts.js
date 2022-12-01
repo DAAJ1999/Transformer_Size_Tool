@@ -1602,13 +1602,12 @@ if(Met=="Coincidence Factor"){
      
 	}
 	}
+}
 	
 	return false;
 
-}
-function refreshPage(){
-    window.parent.location = window.parent.location.href;
-}
+
+ 
 }
 
 

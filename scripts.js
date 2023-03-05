@@ -1610,22 +1610,26 @@ if(Met=="Coincidence Factor"){
 
 
 
-//function updateItems(_this) {
- // var ItemCount = + _this.value //get the value
- // var results = document.querySelector('#results') //append results
- // results.innerHTML = '' //clear the results on each update
- // for (var i = 1; i <= ItemCount; i++) {
- //  var select = document.createElement('select') //create input
-  //  var label = document.createElement("label"); //create label
-   // label.innerText = 'House ' + i
-  // select.type = "text";
-   // input.placeholder = "House SqaureFoot"; //add a placeholder
-	//input.id ="House"+i;
-    //input.className = "my-inputs"; // set the CSS class
-   // results.appendChild(label); //append label
-    //results.appendChild(document.createElement("br"));
-  //  results.appendChild(input); //append input
-    //results.appendChild(document.createElement("br"));
-	
-	
- // }
+        function addFields(){
+            // Generate a dynamic number of inputs
+            var number = document.getElementById("InputnumberofhousesElectricV").value;
+            // Get the element where the inputs will be added to
+            var container = document.getElementById("container");
+            // Remove every children it had before
+            while (container.hasChildNodes()) {
+                container.removeChild(container.lastChild);
+            }
+            for (i=0;i<number;i++){
+                // Append a node with a random text
+                container.appendChild(document.createTextNode("" + (i+1)));
+                // Create an <input> element, set its type and name attributes
+                var input = document.createElement("input");
+                input.type = "number";
+                input.name = "House" + i +"EV Charger Value";
+				input.id= "HouseEVC" + i;
+                container.appendChild(input);
+                // Append a line break 
+                container.appendChild(document.createElement("br"));
+            }
+        }
+        }

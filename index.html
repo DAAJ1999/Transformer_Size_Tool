@@ -42,8 +42,25 @@
         </div>
         <!-- Bootstrap core JS-->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+
         <!-- Core theme JS-->
          <script src="scripts.js"></script>
+		 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+		 <script>
+		 $(document).ready(function(){
+			$('#add').on('click', add);
+
+			function add() {
+			  var inputFields = parseInt($('#InputnumberofhousesElectricV').val());
+			  
+			  for (let i = 0; i<inputFields; i++){
+				var count=i+1;
+				$('#container1').append("<label style='color: black;font-family: Times New Roman;font-weight: 700;'>EV Charger number:" + count + "</label>")
+				$('#container1').append("<input type='text' class='EVs' id='new" + i + "'>");
+			  }
+			}
+		 });
+		 </script>
 <form onsubmit="return fn1()">
  <div class="Method">
   <label style="color: black;font-family: Times New Roman;font-weight: 700;" class="Method" for="Methodchoice">Method</label>
@@ -96,21 +113,16 @@
     <label style="color: black;font-family: Times New Roman;font-weight: 700;" for="Number of Houses">Number Of Houses(Electric Heat):</label>
     <input type="Number" class="Electric" id="InputnumberofhousesElectric" name="NumberofHousesElectric" placeholder="Enter Number of Houses with Electric Heat">
   </div>
-  
-   <div class="EV">
-    <label style="color: black;font-family: Times New Roman;font-weight: 700;" for="Number of Houses">Number Of Houeses(EV):</label>
-    <input type="Number" class="EV" id="InputnumberofhousesElectricV" name="NumberofHousesEV" placeholder="Enter Number of Houses with EV">
-  </div>
-  <br><br>
-  <button class="btn2">EV Charger Values</button> <input type="button" class="btn1" value="Reset" onClick="window.location.reload(true)"></button>
-  <br><br>
-  
-  
-
-  <br><br>
+  <label style="color: black;font-family: Times New Roman;font-weight: 700;" for="Number of Houses">Number Of Houeses(EV):</label>
+    <input type="Number" id="InputnumberofhousesElectricV" name="NumberofHousesEV" placeholder="Enter Number of Houses with EV">
+	<button class="btn1" id="add">EV Charger Values</button>
+	<br>
+	<div id="container1">
+	</div>
+   <br><br>
   <button class="btn1">Submit</button> <input type="button" class="btn1" value="Reset" onClick="window.location.reload(true)"></button>
   <br><br>
-  <div class="output">
+ <div class="output">
   <label style="color: black;font-family: Times New Roman;font-weight: 700;" class="TSF" for="FinalTotal">FINAL VALUE OF THE TRANSFORMER:</label>
   <p id="TS">Results KVA</p> 
    
@@ -118,6 +130,5 @@
   <p id="COST">The Transformer Cost[USD]</P>
   </div>
 </form>
-		 
-    </body>
+</body>
 </html>

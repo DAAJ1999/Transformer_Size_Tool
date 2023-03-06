@@ -19,7 +19,22 @@ function fn1()
 	var LSF= document.getElementById("SquareFootSize1").value;
 	var Cost= 0;
 	var TS = 0;
+	const evs = document.querySelectorAll('.EVs');
+	const count = evs.length;
+	var total=0;
+	for (let i = 0; i < count; i++) {
+		total=total+parseFloat(evs[i].value);
+	}
+	console.log(total/count);
+	if(sum > 0){
 	var sum= total/count;
+	}
+	else{
+		var sum= 0;
+	}
+
+	
+	
     var Trans=[
 		[0,25,25,25,25,25,50,50,50,50,50,100,100,100,100],
 		[25,25,25,25,50,50,50,50,50,100,100,100,100,100,100],
@@ -40,10 +55,10 @@ if(Met=="Diversity"){
 		var Gwinter= 8;
 		var DFA= DF[NH];
 		
-		var ES= (Esummer+sum)*NHE;
-		var EW= (Ewinter+sum)*NHE;
-		var GS= (Gsummer+sum)*NHG;
-		var GW= (Gwinter+sum)*NHG;
+		var ES= (Esummer+(sum*total))*NHE;
+		var EW= (Ewinter+(sum*total))*NHE;
+		var GS= (Gsummer+(sum*total))*NHG;
+		var GW= (Gwinter+(sum*total))*NHG;
 		
 		var ESDF = ES*DFA;
 		var EWDF = EW*DFA;
@@ -346,11 +361,10 @@ if(Met=="Diversity"){
 		var Ewinter = 18;
 		var Gsummer= 10;
 		var Gwinter= 10;
-		var ES= (Esummer+sum)*NHE;
-		var EW= (Ewinter+sum)*NHE;
-		var GS= (Gsummer+sum)*NHG;
-		var GW= (Gwinter+sum)*NHG;
-		
+		var ES= (Esummer+(sum*total))*NHE;
+		var EW= (Ewinter+(sum*total))*NHE;
+		var GS= (Gsummer+(sum*total))*NHG;
+		var GW= (Gwinter+(sum*total))*NHG;
 		var DFA= DF[NH];
 		
 		var ESDF = ES*DFA;
@@ -652,10 +666,10 @@ if(Met=="Diversity"){
 		var Ewinter = 20;
 		var Gsummer= 11;
 		var Gwinter= 11;
-		var ES= (Esummer+sum)*NHE;
-		var EW= (Ewinter+sum)*NHE;
-		var GS= (Gsummer+sum)*NHG;
-		var GW= (Gwinter+sum)*NHG;
+		var ES= (Esummer+(sum*total))*NHE;
+		var EW= (Ewinter+(sum*total))*NHE;
+		var GS= (Gsummer+(sum*total))*NHG;
+		var GW= (Gwinter+(sum*total))*NHG;
 		
 		var DFA= DF[NH];
 		
@@ -956,10 +970,10 @@ if(Met=="Diversity"){
 		var Ewinter = 21;
 		var Gsummer= 12;
 		var Gwinter= 11;
-	    var ES= (Esummer+sum)*NHE;
-		var EW= (Ewinter+sum)*NHE;
-		var GS= (Gsummer+sum)*NHG;
-		var GW= (Gwinter+sum)*NHG;
+	   	var ES= (Esummer+(sum*total))*NHE;
+		var EW= (Ewinter+(sum*total))*NHE;
+		var GS= (Gsummer+(sum*total))*NHG;
+		var GW= (Gwinter+(sum*total))*NHG;
 		
 		var DFA= DF[NH];
 		
@@ -1262,10 +1276,10 @@ if(Met=="Diversity"){
 	    var Gsummer= 14;
 		var Gwinter= 11;
 	    
-		var ES= (Esummer+sum)*NHE;
-		var EW= (Ewinter+sum)*NHE;
-		var GS= (Gsummer+sum)*NHG;
-		var GW= (Gwinter+sum)*NHG;
+		var ES= (Esummer+(sum*total))*NHE;
+		var EW= (Ewinter+(sum*total))*NHE;
+		var GS= (Gsummer+(sum*total))*NHG;
+		var GW= (Gwinter+(sum*total))*NHG;
 		
 		var DFA= DF[NH];
 		
@@ -1607,13 +1621,7 @@ if(Met=="Coincidence Factor"){
      
 	}
 	}
-	const evs = document.querySelectorAll('.EVs');
-	const count = evs.length;
-	var total=0;
-	for (let i = 0; i < count; i++) {
-		total=total+parseFloat(evs[i].value);
-	}
-	console.log(total/count);
+	
 	
 
 	return false;

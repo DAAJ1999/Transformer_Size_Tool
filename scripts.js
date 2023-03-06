@@ -1606,9 +1606,9 @@ if(Met=="Coincidence Factor"){
 	const count = evs.length;
 	var total=0;
 	for (let i = 0; i < count; i++) {
-		total=total+parseInt(evs[i].value);
+		total=total+parseFloat(evs[i].value);
 	}
-	console.log(averageEVS/count);
+	console.log(total/count);
 	
 
 	return false;

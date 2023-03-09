@@ -26,7 +26,7 @@ function fn1()
 		total=total+parseFloat(evs[i].value);
 	}
 	console.log(total/count);
-	if(sum > 0){
+	if(count > 0){
 	var sum= total/count;
 	}
 	else{
@@ -55,10 +55,10 @@ if(Met=="Diversity"){
 		var Gwinter= 8;
 		var DFA= DF[NH];
 		
-		var ES= (Esummer+(sum*total))*NHE;
-		var EW= (Ewinter+(sum*total))*NHE;
-		var GS= (Gsummer+(sum*total))*NHG;
-		var GW= (Gwinter+(sum*total))*NHG;
+		var ES= (Esummer*NHE)+(sum*count);
+		var EW= (Ewinter*NHE)+(sum*count);
+		var GS= (Gsummer*NHG)+(sum*count);
+		var GW= (Gwinter*NHG)+(sum*count);
 		
 		var ESDF = ES*DFA;
 		var EWDF = EW*DFA;
@@ -361,10 +361,10 @@ if(Met=="Diversity"){
 		var Ewinter = 18;
 		var Gsummer= 10;
 		var Gwinter= 10;
-		var ES= (Esummer+(sum*total))*NHE;
-		var EW= (Ewinter+(sum*total))*NHE;
-		var GS= (Gsummer+(sum*total))*NHG;
-		var GW= (Gwinter+(sum*total))*NHG;
+		var ES= (Esummer*NHE)+(sum*count);
+		var EW= (Ewinter*NHE)+(sum*count);
+		var GS= (Gsummer*NHG)+(sum*count);
+		var GW= (Gwinter*NHG)+(sum*count);
 		var DFA= DF[NH];
 		
 		var ESDF = ES*DFA;
@@ -666,10 +666,10 @@ if(Met=="Diversity"){
 		var Ewinter = 20;
 		var Gsummer= 11;
 		var Gwinter= 11;
-		var ES= (Esummer+(sum*total))*NHE;
-		var EW= (Ewinter+(sum*total))*NHE;
-		var GS= (Gsummer+(sum*total))*NHG;
-		var GW= (Gwinter+(sum*total))*NHG;
+		var ES= (Esummer*NHE)+(sum*count);
+		var EW= (Ewinter*NHE)+(sum*count);
+		var GS= (Gsummer*NHG)+(sum*count);
+		var GW= (Gwinter*NHG)+(sum*count);
 		
 		var DFA= DF[NH];
 		
@@ -970,10 +970,10 @@ if(Met=="Diversity"){
 		var Ewinter = 21;
 		var Gsummer= 12;
 		var Gwinter= 11;
-	   	var ES= (Esummer+(sum*total))*NHE;
-		var EW= (Ewinter+(sum*total))*NHE;
-		var GS= (Gsummer+(sum*total))*NHG;
-		var GW= (Gwinter+(sum*total))*NHG;
+	   	var ES= (Esummer*NHE)+(sum*count);
+		var EW= (Ewinter*NHE)+(sum*count);
+		var GS= (Gsummer*NHG)+(sum*count);
+		var GW= (Gwinter*NHG)+(sum*count);
 		
 		var DFA= DF[NH];
 		
@@ -1276,10 +1276,10 @@ if(Met=="Diversity"){
 	    var Gsummer= 14;
 		var Gwinter= 11;
 	    
-		var ES= (Esummer+(sum*total))*NHE;
-		var EW= (Ewinter+(sum*total))*NHE;
-		var GS= (Gsummer+(sum*total))*NHG;
-		var GW= (Gwinter+(sum*total))*NHG;
+		var ES= (Esummer*NHE)+(sum*count);
+		var EW= (Ewinter*NHE)+(sum*count);
+		var GS= (Gsummer*NHG)+(sum*count);
+		var GW= (Gwinter*NHG)+(sum*count);
 		
 		var DFA= DF[NH];
 		

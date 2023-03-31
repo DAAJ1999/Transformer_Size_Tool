@@ -19,6 +19,7 @@ function fn1()
 	var LSF= document.getElementById("SquareFootSize1").value;
 	var Cost= 0;
 	var TS = 0;
+	var cf= [
 	const evs = document.querySelectorAll('.EVs');
 	const count = evs.length;
 	var total=0;

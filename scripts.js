@@ -17,6 +17,9 @@ function fn1()
 	var NHE = document.getElementById("InputnumberofhousesElectric").valueAsNumber;
 	var NH = document.getElementById("NH").valueAsNumber; 
 	var LSF= document.getElementById("SquareFootSize1").value;
+	if ( NH> 12){
+		alert( "the value must be lower then 12 as the voltage drop will be too great");
+	}
 	var Cost= 0;
 	var TS = 0;
 	var cf= [0,1,0.85,0.74,0.66,0.61,0.57,0.54,0.52,0.5,0.49,0.47,0.46,0.45,0.43,0.42,0.41,0.39,0.38,0.38,0.37,0.37];

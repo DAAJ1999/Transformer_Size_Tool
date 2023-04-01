@@ -87,6 +87,9 @@ body {
   background-color: var(--bs-body-bg);
   -webkit-text-size-adjust: 100%;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+   background-image: url("abstract-3d-lines-bright-wallpaper-preview.jpg");
+  background-repeat: no-repeat, repeat;
+background-size:cover;
 }
 
 hr {
@@ -106,6 +109,7 @@ h6, .h6, h5, .h5, h4, .h4, h3, .h3, h2, .h2, h1, .h1 {
   margin-bottom: 0.5rem;
   font-weight: 500;
   line-height: 1.2;
+  text-align:center;
 
 }
 
@@ -116,6 +120,7 @@ font-family: "Scout Cond Black", Impact, sans-serif;
     line-height: .85em;
     margin-bottom: 0.25em;
     color: black;
+	text-align:center;
  
 }
 @media (min-width: 1200px) {
@@ -126,6 +131,7 @@ font-family: "Scout Cond Black", Impact, sans-serif;
     line-height: .85em;
     margin-bottom: 0.25em;
     color: black;
+	text-align:center;
 	
   }
 }
@@ -11303,18 +11309,14 @@ textarea.form-control-lg {
 .form-control{
 width: 250px;
 }
-body {
-  background-image: url("abstract-3d-lines-bright-wallpaper-preview.jpg");
-  background-repeat: no-repeat, repeat;
-  background-color: #cccccc;
- background-size:cover;
-}
+
 
 form {
 
 width:500px;
 left:700px;
 position:relative;
+
 
 }
 
@@ -11329,6 +11331,7 @@ input[type="text"], input[type="Number"], select {
     font-size: 16px;
     font-size: 1rem;
     color: #000;
+	
 }
 label {
     color: #000;

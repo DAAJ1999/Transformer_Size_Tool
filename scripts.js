@@ -29,9 +29,9 @@ function fn1()
 	for (let i = 0; i < count1; i++) {
 		total1=total1+parseFloat(Kwhs[i].value);
 	}
-	console.log(total1/count1);
+	console.log(total1);
 	if(count1 > 0){
-	var sum1= total1/count1;
+	var sum1= total1;
 	}
 	else{
 		var sum1= 0;
@@ -41,11 +41,11 @@ function fn1()
 	const count2 = Kwhw.length;
 	var total2=0;
 	for (let i = 0; i < count2; i++) {
-		total1=total2+parseFloat(Kwhw[i].value);
+		total2=total2+parseFloat(Kwhw[i].value);
 	}
-	console.log(total2/count2);
+	console.log(total2);
 	if(count2 > 0){
-	var sum2= total2/count2;
+	var sum2= total2;
 	}
 	else{
 		var sum2= 0;
@@ -1618,15 +1618,16 @@ if(Met=="Coincidence Factor"){
 	
 		var CFA= cf[NH];
 		
-		var ES= (Esummer*NHE)+(sum*count);
-		var EW= (Ewinter*NHE)+(sum*count);
-		var GS= (Gsummer*NHG)+(sum*count);
-		var GW= (Gwinter*NHG)+(sum*count);
+		var KWDS= (((sum1-(count1*50))/50)*0.22)+(count1*2.40);
+		var KWDW= (((sum2-(count2*50))/50)*0.32)+(count2*1.97);
 		
-		var ESDF = ES*DFA;
-		var EWDF = EW*DFA;
-		var GSDF = GS*DFA;
-		var GWDF = GW*DFA;
+		var ES= (KWDS)+(sum*count);
+		var EW= (KWDW)+(sum*count);
+		
+		
+		var ESDF = ES*CFA;
+		var EWDF = EW*CFA;
+	
 			
 			
      if((ESDF < 14 || ESDF == 14 && ESDF > 0 ) && (EWDF < 16 || EWDF == 16 && EWDF > 0)){

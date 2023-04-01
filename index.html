@@ -42,6 +42,9 @@
 		 <script>
 		 $(document).ready(function(){
 			$('#add').on('click', add);
+			$('#add1').on('click', add1);
+			$('#add2').on('click', add2);
+			
 
 			function add() {
 			  var inputFields = parseInt($('#InputnumberofhousesElectricV').val());
@@ -50,6 +53,24 @@
 				var count=i+1;
 				$('#container1').append("<label style='color: black;font-family: Times New Roman;font-weight: 700;'>EV Charger Value(kW): House " + count + "</label>")
 				$('#container1').append("<input type='text' class='EVs' placeholder='Ev Charger Value in kW' id='new" + i + "'>");
+			  }
+			}
+			function add1() {
+			  var inputFields1 = parseInt($('#InputnumberofhousesKwhs').val());
+			  
+			  for (let i = 0; i<inputFields1; i++){
+				var count1=i+1;
+				$('#container2').append("<label style='color: black;font-family: Times New Roman;font-weight: 700;'>Summer(Kwh)" + count1 + "</label>")
+				$('#container2').append("<input type='text' class='KWs' placeholder='Summer(Kwh)' id='Summer" + i + "'>");
+			  }
+			}
+			function add2() {
+			  var inputFields2 = parseInt($('#InputnumberofhousesKwhw').val());
+			  
+			  for (let i = 0; i<inputFields2; i++){
+				var count2=i+1;
+				$('#container3').append("<label style='color: black;font-family: Times New Roman;font-weight: 700;'>Winter(kWh): House " + count2 + "</label>")
+				$('#container3').append("<input type='text' class='KWw' placeholder='Winter(Kwh)' id='Winter" + i + "'>");
 			  }
 			}
 		 });
@@ -69,16 +90,23 @@
     <label style="color: black;font-family: Times New Roman;font-weight: 700;" for="Number of Houses">Number Of Houses:</label>
     <input type="Number" class="HouseNumbers" id="NH"  name="NumberofHouses" placeholder="Enter Number of Houses">
   </div>
-   <div class="CFMS">
-    <label style="color: black;font-family: Times New Roman;font-weight: 700;" for="KWHS">Value of Kwh in Summer(Coincidence factor Method only):</label>
-    <input type="Number" class="CFMS" id="NHS"  name="KWHS" placeholder="Enter Kwh for Summer">
-  </div>
-   <div class="CFMW">
-    <label style="color: black;font-family: Times New Roman;font-weight: 700;" for="KWHW">Value of Kwh in Winter(Coincidence factor Method only):</label>
-    <input type="Number" class="CFMW" id="NHW"  name="KWHW" placeholder="Enter Kwh for Winter">
-  </div>
+   <label style="color: black;font-family: Times New Roman;font-weight: 700;" for="Number of Houses">Number Of Houeses(Summer Kwh):</label>
+    <input type="Number" id="InputnumberofhousesKwhs" name="NumberofHousesKwhs" placeholder="Enter Number of Houses">
+	<button class="btn1" id="add1">Summer Kwh Values</button>
+	<br>
+	<div id="container2">
+	</div>
+
+	<label style="color: black;font-family: Times New Roman;font-weight: 700;" for="Number of Houses"> Number of Houses(Winter Kwh):</label>
+    <input type="Number" id="InputnumberofhousesKwhw" name="NumberofHousesKwhw" placeholder="Enter Number of Houses">
+	<button class="btn1" id="add2">Winter Kwh Values</button>
+	<br>
+	<div id="container3">
+	</div>
+
   
   <div id="results"></div>
+  
   <br>
   <div class="SquareFoot">
   <label style="color: black;font-family: Times New Roman;font-weight: 700;" class="SquareFoot" for="SquareFootSize">Highest Squarefoot Home:</label>

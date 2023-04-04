@@ -88,8 +88,9 @@ body {
   -webkit-text-size-adjust: 100%;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
    background-image: url("abstract-3d-lines-bright-wallpaper-preview.jpg");
-  background-repeat: no-repeat, repeat;
-background-size:cover;
+  background-repeat: no-repeat;
+  background-position:center;
+  background-size:cover;
 
 }
 
@@ -11419,17 +11420,33 @@ left:700px;
 }
 @media (max-width: 700px) {
   form {
-    width: 500px; 
+    width: 400px; 
 	position:relative;
 	left:100px;
 	
   }
 }
-
-
 @media (max-width: 600px) {
   form {
-    width: 500px; 
+    width: 400px; 
+	position:relative;
+	left:50px;
+	
+  }
+}
+@media (max-width: 500px) {
+  form {
+    width: 350px; 
+	position:relative;
+	left:50px;
+	
+  }
+}
+
+
+@media (max-width: 400px) {
+  form {
+    width: 350px; 
 	position:static;
 	
   }
